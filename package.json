@@ -1,0 +1,25 @@
+{
+  "name": "@viktorplaga/safeutils",
+  "version": "0.0.1",
+  "description": "Native MacOS, Linux and Windows desktop application with 110+ carefully crafted tools for yours and your teams everyday work with sensitive data in various formats.",
+  "main": "index.js",
+  "homepage": "https://safeutils.com",
+  "bugs": {
+    "url": "https://safeutils.com",
+    "email": "support@safeutils.com"
+  },
+  "repository": "https://github.com/safe-utils/.github",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Wiktor Plaga",
+    "email": "wiktor.plaga@tzif.io",
+    "url": "https://x.com/viktorplaga"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "funding": {
+    "type": "individual",
+    "url": "http://safeutils.com/pricing"
+  }
+}
