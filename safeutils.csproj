@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>SafeUtils</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Wiktor Plaga</Authors>
+    <Title>SafeUtils</Title>
+    <Description>SafeUtils: Native MacOS, Linux and Windows desktop application with 110+ carefully crafted tools for yours and your teams everyday work with sensitive data in various formats.</Description>
+    <Copyright>Copyright (c) Wiktor Plaga 2024</Copyright>
+    <Company>safeutils</Company>
+    <PackageProjectUrl>https://safeutils.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/safe-utils/.github</RepositoryUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>convert;generate;decode;encode;parse;preview;debug;inspect;json;yaml;csv;toml;xml;time;color</PackageTags>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>safeutils</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE.md" Pack="true" PackagePath="\"/>
+    <None Include="assets\logo\512x512.png" Pack="true" PackagePath="\icon.png"/>
+  </ItemGroup>
+</Project>
