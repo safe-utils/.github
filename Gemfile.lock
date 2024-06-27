@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    safeutils (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  arm64-darwin-21
+  ruby
+
+DEPENDENCIES
+  safeutils!
+
+BUNDLED WITH
+   2.5.6

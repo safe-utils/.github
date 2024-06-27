@@ -1,0 +1,33 @@
+name: Rubygems Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  rubygems:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Build & Release Gem
+        run: |
+          mkdir -p ~/.gem
+          cat << EOF > ~/.gem/credentials
+          ---
+          :github: Bearer ${GH_TOKEN}
+          :rubygems_api_key: ${RUBYGEMS_API_KEY}
+          EOF
+          bundle install
+          sudo chmod 0600 ~/.gem/credentials
+          cat ~/.gem/credentials
+          gem build safeutils.gemspec --backtrace --strict --verbose
+          gem push safeutils-0.0.1.gem --backtrace --verbose
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
