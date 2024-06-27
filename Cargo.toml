@@ -1,0 +1,15 @@
+[package]
+version = "0.0.1"
+name = "safeutils"
+description = "110+ carefully crafted tools for yours and your teams everyday work with sensitive data in various formats."
+homepage = "https://safeutils.com"
+documentation = "https://safeutils.com/releases"
+license-file = "LICENSE.md"
+readme = "README.md"
+repository = "https://github.com/safe-utils/.github"
+authors = ["Wiktor Plaga"]
+edition = "2021"
+keywords = ["developer-tools", "data-security", "data-privacy", "data-processing", "desktop-app"]
+categories = ["development-tools", "parsing", "text-processing", "value-formatting", "visualization"]
+
+[dependencies]
