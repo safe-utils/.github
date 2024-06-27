@@ -16,4 +16,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - run: go mod tidy
       - run: go run .
-      - run: GOPROXY=proxy.golang.org go list -m gitlab.com/safeutils/gitlab-profile@v0.0.1
+      - run: GOPROXY=proxy.golang.org go list -m gitlab.com/safeutils/gitlab-profile@0.0.1
