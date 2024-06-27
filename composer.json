@@ -1,0 +1,19 @@
+{
+  "name": "safeutils/safeutils",
+  "type": "library",
+  "description": "SafeUtils: Native MacOS, Linux and Windows desktop application with 110+ carefully crafted tools for yours and your teams everyday work with sensitive data in various formats.",
+  "keywords": ["convert","generate","decode","encode","parse","preview","debug","inspect","json","yaml","csv","toml","xml","time","color"],
+  "homepage": "https://safeutils.com",
+  "license": "proprietary",
+  "authors": [
+        {
+            "name": "Wiktor Plaga",
+            "email": "wiktor.plaga@tzif.io",
+            "homepage": "https://x.com/viktorplaga",
+            "role": "Software Engineer"
+        }
+    ],
+  "require": {
+      "php": ">=8.1"
+  }
+}

@@ -1,0 +1,25 @@
+name: Packagist Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  packagist:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update
+          sudo apt install -y php-common libapache2-mod-php php-cli
+          curl -sS https://getcomposer.org/installer | php
+          php composer.phar install
+      - uses: wscourge/gha-packagist-publish@1.0.2
+        with:
+          username: "viktorplaga"
+          api_token: ${{ secrets.PACKAGIST_REGISTRY_TOKEN }}
+          # package_name: safeutils/safeutils
+          # domain: "packagist.org"
